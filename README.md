@@ -12,7 +12,7 @@ The deployment scenario simulates standard production security hardening mandate
 
 ### Technical Specification Requirements:
 * **Resource Optimization**: Isolate and terminate the highest CPU-consuming runaway process thread.
-*
+  
 * **Group Provisioning**: Establish a dedicated security group named database bound to GID 50000.
   
 * **IAM Compliance Enforcement**: Provision user account dbadmin1 to inherit supplementary group privileges, enforce a forced password change on initialization, restrict password cycling frequency to a 10-day minimum floor, and apply a hard 30-day account expiration ceiling.
