@@ -38,6 +38,8 @@ Query the active task manager subsystem to isolate the process ID execution vect
 
 <img width="809" height="357" alt="image" src="https://github.com/user-attachments/assets/e54ee9b0-8312-426a-be79-79f68524cf59" />
 
+---
+
 **Step 2: Enterprise Identity & Access Policy Enforcement**
 
 
@@ -63,6 +65,8 @@ Provision the organizational directory access groups and construct the primary a
 
 <img width="691" height="366" alt="image" src="https://github.com/user-attachments/assets/022c8450-50ff-43b5-8ecc-e7c166762bd2" />
 
+---
+
 **Step 3: Hardened Shared Directory Architecture & Special Permissions**
 
 
@@ -84,7 +88,19 @@ Modify system environment default masks to intercept group permissions leakages 
 
 <img width="736" height="257" alt="image" src="https://github.com/user-attachments/assets/26e7f0c6-2d0f-4ef7-a442-7ff30cc41cdb" />
 
-
-
-
 ## 📊 Verification and Testing
+
+**Step 1: System Security Policy Compliance Verification**
+
+
+Execute the external automated testing mechanism to verify error-free deployment of identities, directory parameters, and privilege paths.
+
+<img width="719" height="511" alt="image" src="https://github.com/user-attachments/assets/17c7f9a0-4c00-4403-bb4c-9c1bd4df984e" />
+
+**Step 2: Sandbox Environment Teardown**
+
+
+De-provision local sandbox elements to safely return the environment back to pre-test baseline states.  
+
+
+<img width="702" height="289" alt="image" src="https://github.com/user-attachments/assets/a8043c83-8737-4fa4-99e6-40f8b36f1052" />
