@@ -14,13 +14,11 @@ The deployment scenario simulates standard production security hardening mandate
 
 ### Technical Specification Requirements:
 
-* **Resource Optimization**:
+* **Resource Optimization**: Isolate and terminate the highest CPU-consuming runaway process thread.
 
-Isolate and terminate the highest CPU-consuming runaway process thread.
   
-* **Group Provisioning**:
+* **Group Provisioning**: Establish a dedicated security group named database bound to GID 50000.
 
-Establish a dedicated security group named database bound to GID 50000.
   
 * **IAM Compliance Enforcement**:
 
