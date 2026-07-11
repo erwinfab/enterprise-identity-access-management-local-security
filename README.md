@@ -41,7 +41,9 @@ Query the active task manager subsystem to isolate the process ID execution vect
 * Gracefully terminate or force-kill the rogue process entry
    * `kill <TARGET_PID>`
 
+
 <img width="809" height="392" alt="image" src="https://github.com/user-attachments/assets/913fd860-8051-44ce-aeeb-017ff30732d4" />
+
 
 <img width="809" height="357" alt="image" src="https://github.com/user-attachments/assets/e54ee9b0-8312-426a-be79-79f68524cf59" />
 
@@ -70,6 +72,7 @@ Provision the organizational directory access groups and construct the primary a
 * Deploy explicit privilege escalation rules inside the sudoers layout mapping
    * `echo "dbadmin1 ALL=(ALL) ALL" > /etc/sudoers.d/dbadmin1`
 
+
 <img width="691" height="366" alt="image" src="https://github.com/user-attachments/assets/022c8450-50ff-43b5-8ecc-e7c166762bd2" />
 
 ---
@@ -93,6 +96,7 @@ Modify system environment default masks to intercept group permissions leakages 
    * Allow full read(4)/write(2)/execute(1) for the owner and group (7), allow read/execute for others (5), force Set Group ID (SGID) group ownership inheritance (2), and lock down unauthorized content deletions using the Sticky Bit (1)
    * `chmod 3775 /home/dbadmin1/grading/review2`
 
+
 <img width="736" height="257" alt="image" src="https://github.com/user-attachments/assets/26e7f0c6-2d0f-4ef7-a442-7ff30cc41cdb" />
 
 ## 📊 Verification and Testing
@@ -102,7 +106,9 @@ Modify system environment default masks to intercept group permissions leakages 
 
 Execute the external automated testing mechanism to verify error-free deployment of identities, directory parameters, and privilege paths.
 
+
 <img width="719" height="511" alt="image" src="https://github.com/user-attachments/assets/17c7f9a0-4c00-4403-bb4c-9c1bd4df984e" />
+
 
 **Step 2: Sandbox Environment Teardown**
 
