@@ -23,7 +23,48 @@ The deployment scenario simulates standard production security hardening mandate
 
 ## 🛠️ High-Level Deployment and Configuration Steps
 
-**Step 1:  **
+**Step 1: Resource Optimization & Process Triage**
+
+
+Query the active task manager subsystem to isolate the process ID execution vector exhibiting runaway CPU utilization metrics, and execute an immediate terminal command to reclaim host computational bandwidth.  
+
+* Analyze runtime process execution hierarchies and isolate high-overhead PIDs
+   * `top`
+    
+* Gracefully terminate or force-kill the rogue process entry
+   * `kill <TARGET_PID>`
+
+<img width="809" height="392" alt="image" src="https://github.com/user-attachments/assets/913fd860-8051-44ce-aeeb-017ff30732d4" />
+
+<img width="809" height="357" alt="image" src="https://github.com/user-attachments/assets/e54ee9b0-8312-426a-be79-79f68524cf59" />
+
+**Step 2: Enterprise Identity & Access Policy Enforcement**
+
+
+Provision the organizational directory access groups and construct the primary administrator profile mapped against strict structural lifecycle compliance definitions.  
+
+* Provision the corporate security group with explicit GID definitions
+   * `groupadd -g 50000 database`
+
+* Initialize the administrative user account with secondary group mapping
+   * `useradd -G database dbadmin1`
+
+* Establish initial account credential mapping
+   * `passwd dbadmin1`
+
+* Enforce a post-deployment forced password reset upon original authentication loop
+   * `chage -d 0 dbadmin1`
+
+* Apply strict structural lifecycle metrics (10-day minimum floor, 30-day rotation max)
+   * `chage -m 10 -M 30 dbadmin1`
+
+* Deploy explicit privilege escalation rules inside the sudoers layout mapping
+   * `echo "dbadmin1 ALL=(ALL) ALL" > /etc/sudoers.d/dbadmin1`
+
+<img width="691" height="366" alt="image" src="https://github.com/user-attachments/assets/022c8450-50ff-43b5-8ecc-e7c166762bd2" />
+
+
+
 
 
 
