@@ -63,9 +63,26 @@ Provision the organizational directory access groups and construct the primary a
 
 <img width="691" height="366" alt="image" src="https://github.com/user-attachments/assets/022c8450-50ff-43b5-8ecc-e7c166762bd2" />
 
+**Step 3: Hardened Shared Directory Architecture & Special Permissions**
 
 
+Modify system environment default masks to intercept group permissions leakages and apply sticky indicators onto shared directory environments to preserve collaborative data integrity.  
 
+
+* Establish environmental bit-mask controls inside the target profile config
+   * `echo "umask 007" >> /home/dbadmin1/.bashrc`
+
+* Provision the production collaborative node directory
+   * `mkdir -p /home/dbadmin1/grading/review2`
+
+* Execute an ownership overhaul across the targeted storage path directory
+   * `chown dbadmin1:database /home/dbadmin1/grading/review2`
+
+* Configure directory constraints:
+   * Allow full read(4)/write(2)/execute(1) for the owner and group (7), allow read/execute for others (5), force Set Group ID (SGID) group ownership inheritance (2), and lock down unauthorized content deletions using the Sticky Bit (1)
+   * `chmod 3775 /home/dbadmin1/grading/review2`
+
+<img width="736" height="257" alt="image" src="https://github.com/user-attachments/assets/26e7f0c6-2d0f-4ef7-a442-7ff30cc41cdb" />
 
 
 
