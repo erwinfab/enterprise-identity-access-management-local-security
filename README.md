@@ -19,18 +19,14 @@ The deployment scenario simulates standard production security hardening mandate
   
 * **Group Provisioning**: Establish a dedicated security group named database bound to GID 50000.
 
-  
-* **IAM Compliance Enforcement**:
 
-Provision user account dbadmin1 to inherit supplementary group privileges, enforce a forced password change on initialization, restrict password cycling frequency to a 10-day minimum floor, and apply a hard 30-day account expiration ceiling.
-  
-* **Privilege Escalation Routing**:
+* **IAM Compliance Enforcement**: Provision user account dbadmin1 to inherit supplementary group privileges, enforce a forced password change on initialization, restrict password cycling frequency to a 10-day minimum floor, and apply a hard 30-day account expiration ceiling.
 
-Grant standard superuser access to the admin account via explicit configuration inside the local sudoers engine.
   
-* **Hardened Collaborative Workspace**:
+* **Privilege Escalation Routing**: Grant standard superuser access to the admin account via explicit configuration inside the local sudoers engine.
 
-Establish directory /home/dbadmin1/grading/review2 engineered with an active mask (umask 007) to block general read vectors, assign proper resource ownership, enforce strict Set Group ID (SGID) inheritance rules, and apply a data-deletion block (Sticky Bit).
+  
+* **Hardened Collaborative Workspace**: Establish directory /home/dbadmin1/grading/review2 engineered with an active mask (umask 007) to block general read vectors, assign proper resource ownership, enforce strict Set Group ID (SGID) inheritance rules, and apply a data-deletion block (Sticky Bit).
 
 ## 🛠️ High-Level Deployment and Configuration Steps
 
