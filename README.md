@@ -11,11 +11,14 @@ This project validates administrative competencies in automated resource optimiz
 The deployment scenario simulates standard production security hardening mandates to protect system resources and enforce data privacy boundaries across corporate directory environments.  
 
 ### Technical Specification Requirements:
-* **Resource Optimization**: Isolate and terminate the highest CPU-consuming runaway process thread.
+* **Resource Optimization**:
+Isolate and terminate the highest CPU-consuming runaway process thread.
   
-* **Group Provisioning**: Establish a dedicated security group named database bound to GID 50000.
+* **Group Provisioning**:
+Establish a dedicated security group named database bound to GID 50000.
   
-* **IAM Compliance Enforcement**: Provision user account dbadmin1 to inherit supplementary group privileges, enforce a forced password change on initialization, restrict password cycling frequency to a 10-day minimum floor, and apply a hard 30-day account expiration ceiling.
+* **IAM Compliance Enforcement**:
+Provision user account dbadmin1 to inherit supplementary group privileges, enforce a forced password change on initialization, restrict password cycling frequency to a 10-day minimum floor, and apply a hard 30-day account expiration ceiling.
   
 * **Privilege Escalation Routing**: Grant standard superuser access to the admin account via explicit configuration inside the local sudoers engine.
   
